@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link 
+    rel="stylesheet" 
+    href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+  />
+  <link rel="stylesheet" href="style.css">
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="search">
+        <form id="searchForm" method="get" href="#">
+          <label for="submit" class="material-icons-outlined search-icon">
+            search
+          </label>
+          <input type="sumbit" id="submit" hidden>
+          <input type="text" class="input-search" name="searchResult">
+        </form>
+      </div>
+      <div class="profile">
+        <button class="notify-bell">
+          <span class="material-icons-outlined"> notifications_active </span>
+        </button>
+        <div class="profile-picture"></div>
+        <div class="profile-name">John Doe</div>
+      </div>
+      <div class="welcome">
+        <div class="profile-picture"></div>
+        <p class="welcome-message">Hi there, <br> <span class="profile-name-and-login">John Doe (@johndoe)</span></p>
+      </div>
+      <div class="buttons">
+        <button class="btn">New</button>
+        <button class="btn">Upload</button>
+        <button class="btn">Share</button>
+      </div>
+    </header>
+
+    <section class="side-bar">
+      <div class="nav-heading">
+        <img src="./icons/view-dashboard.png" alt="dash-board icon" class="dash-image">
+        Dashboard
+      </div>
+      
+      <div class="nav-bar">
+        <ul class="nav-list">
+          <li>
+            <img src="./icons/home.png"  class="sb-icon">
+            Home
+          </li>
+          <li>
+            <img src="./icons/card-account-details.png"  class="sb-icon">
+            Profile
+          </li>
+          <li>
+            <img src="./icons/message-reply.png" class="sb-icon">
+            Messages
+          </li>
+          <li>
+            <img src="./icons/clock-time-three.png" class="sb-icon">
+            History
+          </li>
+          <li>
+            <img src="./icons/note-multiple (1).png" class="sb-icon">
+            Tasks
+          </li>
+          <li>
+            <img src="./icons/account-group.png" class="sb-icon">
+            Communities
+          </li>
+        </ul>
+      </div>
+
+      <div class="setting-bar">
+        <ul class="setting-list">
+          <li>
+            <img src="./icons/cog.png" class="sb-icon">
+            Settings
+          </li>
+          <li>
+            <img src="./icons/help-box.png" class="sb-icon">
+            Support
+          </li>
+          <li>
+            <img src="./icons/shield-check.png" class="sb-icon">
+            Privacy
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="main">
+      <div class="projects">
+        <h2>Your Projects</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="card-header">Super Cool Project</div>
+            <p>Lorem Ipsum nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <div class="actions">
+              <img src="./icons/star-plus-outline.svg" alt="star" class="action">
+              <img src="./icons/eye-plus-outline.svg" alt="eye" class="action">
+              <img src="./icons/source-fork.svg" alt="fork" class="action">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Less Cool Project</div>
+            <p>Lorem Ipsum laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="actions">
+              <img src="./icons/star-plus-outline.svg" alt="star" class="action">
+              <img src="./icons/eye-plus-outline.svg" alt="eye" class="action">
+              <img src="./icons/source-fork.svg" alt="fork" class="action">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Impossible App</div>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <div class="actions">
+              <img src="./icons/star-plus-outline.svg" alt="star" class="action">
+              <img src="./icons/eye-plus-outline.svg" alt="eye" class="action">
+              <img src="./icons/source-fork.svg" alt="fork" class="action">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Easy Peasy App</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="actions">
+              <img src="./icons/star-plus-outline.svg" alt="star" class="action">
+              <img src="./icons/eye-plus-outline.svg" alt="eye" class="action">
+              <img src="./icons/source-fork.svg" alt="fork" class="action">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Ad Blocker</div>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="actions">
+              <img src="./icons/star-plus-outline.svg" alt="star" class="action">
+              <img src="./icons/eye-plus-outline.svg" alt="eye" class="action">
+              <img src="./icons/source-fork.svg" alt="fork" class="action">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Money Maker</div>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="actions">
+              <img src="./icons/star-plus-outline.svg" alt="star" class="action">
+              <img src="./icons/eye-plus-outline.svg" alt="eye" class="action">
+              <img src="./icons/source-fork.svg" alt="fork" class="action">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <section class="main-sidebar">
+        <div class="announ-container">
+          <h2>Announcements</h2>
+          <div class="announ-card">
+            <div class="single-announ">
+              <h3>Site maintenance</h3>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <hr>
+            <div class="single-announ">
+              <h3>Community Share Day</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+            <hr>
+            <div class="single-announ">
+              <h3>Updated Privacy Policy</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="trending-container">
+          <h2>Trending</h2>
+          <div class="trending-card">
+            <div class="single-trend">
+              <img src="./icons/Screen Shot 2022-03-25 at 4.54.47 PM.png" class="trend-image">
+              <div class="user-info">@tegan <span class="user-description">World Peace Builder</span></div>
+            </div>
+            <div class="single-trend">
+              <img src="./icons/Screen Shot 2022-03-25 at 9.31.52 AM.png" class="trend-image">
+              <div class="user-info">@jognwest <span class="user-description">Super Cool Project</span></div>
+            </div>
+            <div class="single-trend">
+              <img src="./icons/Screen Shot 2022-03-25 at 4.58.19 PM.png" class="trend-image">
+              <div class="user-info">@kendall <span class="user-description">Life Changing App</span></div>
+            </div>
+            <div class="single-trend">
+              <img src="./icons/068e542866ad718fad29978646f6998c.jpeg" class="trend-image">
+              <div class="user-info">@alex <span class="user-description">No Traffic Maker</span></div>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+    </section>
+  </div>
+</body>
+</html>
